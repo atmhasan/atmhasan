@@ -1,5 +1,24 @@
 # Development Log
 
+## 2026-06-23 - GitHub Pages deployment audit
+
+### Work completed
+
+- Replaced the temporary gh-pages debug workflow with GitHub's artifact-based Pages deployment flow.
+- Restored the dedicated github-pages environment and official deploy-pages job.
+- Added linting to the remote deployment gate.
+- Corrected the certificate carousel callback declarations so ESLint passes.
+- Updated the README status and deployment guide with the repository root, exact apex DNS records, www alias, custom-domain ordering, and HTTPS checks.
+
+### Verification
+
+- Installed dependencies successfully from package-lock.json.
+- Validated all 14 JSON content files.
+- ESLint passed.
+- TypeScript and Vite production build passed with 1,604 modules transformed.
+- Served the production dist output at http://127.0.0.1:4173/.
+- Confirmed HTTP 200 for the homepage, site JSON, CV, social preview image, robots file, sitemap, and CNAME.
+
 ## 2026-06-21 - Project foundation
 
 ### Goals

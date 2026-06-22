@@ -1,4 +1,4 @@
-# A T M Hasan Portfolio - New Design
+# A T M Hasan Portfolio
 
 ## Project Goal
 
@@ -19,10 +19,10 @@ editable through JSON files.
 - JSON files as the content database
 - GitHub Actions and GitHub Pages for deployment
 
-## Proposed Project Structure
+## Project Structure
 
 ```text
-newdesign/
+atmhasan/
 |-- public/
 |   |-- data/
 |   |   |-- profile.json
@@ -304,7 +304,7 @@ Completed:
 
 In progress / next:
 
-- GitHub Pages workflow and final responsive review
+- Final responsive review and production-domain verification
 
 ### Phase 1: Project Foundation
 
@@ -351,11 +351,12 @@ Status: Complete
 
 ### Phase 6: Verification and Deployment
 
-- Validate every JSON file.
-- Run TypeScript, lint, and production builds.
+- Validate every JSON file. (Complete)
+- Run TypeScript, lint, and production builds. (Complete locally; rerun before release)
 - Test desktop, tablet, and mobile layouts.
 - Check all links and downloadable assets.
-- Add and test the GitHub Pages workflow.
+- Add the GitHub Pages workflow. (Complete)
+- Confirm the production deployment and custom-domain DNS.
 
 ## Required Assets
 

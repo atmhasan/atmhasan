@@ -10,19 +10,26 @@ This project is ready to deploy to GitHub Pages with the custom domain `atmhasan
 
 ## GitHub Repository Setup
 
-1. Push the repository to GitHub.
-2. In the repository settings, open **Pages**.
-3. Set **Build and deployment** to **GitHub Actions**.
-4. If this is a private repository, make sure GitHub Pages is allowed for the account or plan.
+1. Push the `main` branch to `https://github.com/atmhasan/atmhasan`.
+2. In **Settings > Pages**, set **Build and deployment > Source** to **GitHub Actions**.
+3. Under **Custom domain**, enter `atmhasan.com` and click **Save** before changing DNS.
+4. If the repository is private, make sure GitHub Pages is allowed for the account or plan.
 
 ## DNS Setup for `atmhasan.com`
 
-Point the domain to GitHub Pages using the DNS records recommended by GitHub:
+Create these records at the DNS provider (remove conflicting records for the same host):
 
-- `A` records for the apex domain (`atmhasan.com`) pointing to GitHub Pages IP addresses.
-- `CNAME` record for `www.atmhasan.com` pointing to the GitHub Pages hostname if you use a `www` alias.
+| Type | Name | Value |
+| --- | --- | --- |
+| `A` | `@` | `185.199.108.153` |
+| `A` | `@` | `185.199.109.153` |
+| `A` | `@` | `185.199.110.153` |
+| `A` | `@` | `185.199.111.153` |
+| `CNAME` | `www` | `atmhasan.github.io` |
 
-After DNS updates, wait for propagation and then verify the domain in the repository Pages settings.
+GitHub also supports the four `AAAA` records documented in its custom-domain guide, but the `A` records above are sufficient. Do not use wildcard DNS records such as `*.atmhasan.com`.
+
+After DNS updates, allow up to 24 hours for propagation. Then return to **Settings > Pages**, confirm the DNS check succeeds, and enable **Enforce HTTPS**. GitHub recommends verifying `atmhasan.com` in the account's Pages settings as an additional takeover-protection step.
 
 ## Deploy Flow
 
@@ -35,20 +42,22 @@ The GitHub Actions workflow will:
 
 ## Local Verification Before Deploying
 
-Run these commands from the `newdesign` folder:
+Run these commands from the repository root:
 
 ```bash
 npm ci
 npm run lint
 npm run build
+npm run preview -- --host 127.0.0.1
 ```
 
 ## Post-Deployment Checks
 
 - Confirm the homepage loads at `https://atmhasan.com`.
+- Confirm `https://www.atmhasan.com` redirects to the apex domain.
 - Confirm the CV download link points to the renamed PDF in `public/documents`.
 - Check the certificate gallery, mobile header, and sticky navigation on real devices.
-- Verify the `CNAME` file is present in the deployed site root.
+- Confirm the custom domain and **Enforce HTTPS** are enabled in **Settings > Pages**.
 
 ## If the Site Does Not Load Correctly
 

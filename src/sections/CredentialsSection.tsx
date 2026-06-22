@@ -55,7 +55,7 @@ export const CredentialsSection = ({ certifications }: CredentialsSectionProps) 
     requestAnimationFrame(() => viewerRef.current?.showModal());
   };
 
-  const updateScrollButtons = () => {
+  function updateScrollButtons() {
     const el = galleryRef.current;
     if (!el) return;
     setCanScrollPrev(el.scrollLeft > 4);
@@ -70,7 +70,7 @@ export const CredentialsSection = ({ certifications }: CredentialsSectionProps) 
     setPages(newPages);
     const newActive = Math.min(newPages - 1, Math.round(el.scrollLeft / el.clientWidth));
     setActivePage(newActive);
-  };
+  }
 
   const scrollToPage = (page: number) => {
     const el = galleryRef.current;
@@ -79,14 +79,14 @@ export const CredentialsSection = ({ certifications }: CredentialsSectionProps) 
     setTimeout(updateScrollButtons, 300);
   };
 
-  const scrollGallery = (direction: number) => {
+  function scrollGallery(direction: number) {
     const el = galleryRef.current;
     if (!el) return;
     const offset = Math.round(el.clientWidth * 0.9);
     el.scrollBy({ left: direction * offset, behavior: "smooth" });
     // schedule update
     setTimeout(updateScrollButtons, 300);
-  };
+  }
 
   const closeCertificate = () => viewerRef.current?.close();
 
