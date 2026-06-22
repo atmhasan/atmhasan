@@ -1,0 +1,16 @@
+{
+  "items": [
+    { "label": "Home", "sectionId": "home", "visible": true, "sortOrder": 1 },
+    { "label": "About", "sectionId": "about", "visible": true, "sortOrder": 2 },
+    { "label": "Research Focus", "sectionId": "research", "visible": true, "sortOrder": 3 },
+    { "label": "Experience", "sectionId": "experience", "visible": true, "sortOrder": 4 },
+    { "label": "Projects", "sectionId": "projects", "visible": true, "sortOrder": 5 },
+    { "label": "Skills", "sectionId": "skills", "visible": true, "sortOrder": 6 },
+    { "label": "Education", "sectionId": "education", "visible": true, "sortOrder": 7 },
+    { "label": "Publications", "sectionId": "publications", "visible": true, "sortOrder": 8 },
+    { "label": "Certifications", "sectionId": "certifications", "visible": true, "sortOrder": 9 },
+    { "label": "References", "sectionId": "references", "visible": true, "sortOrder": 10 },
+    { "label": "Contact", "sectionId": "contact", "visible": true, "sortOrder": 11 }
+  ]
+}
+

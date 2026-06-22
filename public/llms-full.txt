@@ -1,0 +1,73 @@
+# A T M Hasan - Full Professional and Research Profile
+
+Canonical URL: https://atmhasan.com/
+Last updated: 2026-06-22
+Language: English
+Location: Kuala Lumpur, Malaysia
+Email: info@atmhasan.com
+
+## Professional identity
+
+A T M Hasan is an AI Engineer, AI Researcher, Senior Software Engineer and Java Software Engineer with more than 12 years of experience in enterprise application development. His engineering work covers Java, Spring Boot, microservices, REST APIs, database-driven systems, SQL optimization, software architecture, Agile delivery, team leadership and production troubleshooting.
+
+## AI and research specialization
+
+Current PhD research focuses on privacy-preserving multimodal retrieval-augmented generation for higher education. Research topics include synthetic data, data minimization, on-premises knowledge stores, OCR, document parsing, chunking, embeddings, retrieval, re-ranking, grounding, guardrails and evaluation.
+
+Core AI topics:
+- Retrieval-Augmented Generation (RAG)
+- Large Language Models (LLMs)
+- Multimodal RAG
+- Privacy-Preserving AI
+- Document Intelligence and Document AI
+- OCR and document parsing
+- Vector retrieval with FAISS and Chroma
+- Machine learning with Python and scikit-learn
+
+## Software engineering expertise
+
+- Java enterprise software development
+- Spring Boot and microservices
+- REST API design and integration
+- MySQL, Oracle, PostgreSQL, Microsoft SQL Server and MongoDB
+- Database design and SQL optimization
+- Enterprise content management and process automation
+- System reliability, monitoring and production troubleshooting
+- Software development management and technical leadership
+
+## Current activities
+
+- Programming and ICT Instructor at STEP IT Academy, Kuala Lumpur
+- Research Assistant conducting PhD research at UniKL-MIIT
+- Doctor of Philosophy candidate in Information Technology at UniKL-MIIT
+
+## Selected projects
+
+1. Multi-Modal RAG for Higher Education
+2. Loan Prediction Model
+3. Cybersecurity Threat and Vulnerability Prediction
+4. Business Management Solution (BZComposer)
+5. e-Invoicing Integration for MyInvois (Malaysia LHDNM)
+6. Election Result Management System
+7. Enterprise Resource Planning (ERP)
+8. Enterprise Document Management System and Process Automation
+
+## Education
+
+- Doctor of Philosophy (Information Technology), UniKL-MIIT, 2025-present. Focus: Privacy-Preserving RAG for Higher Education.
+- Master of Science in Computer Science and Engineering, United International University, 2019-2020. Focus: Software Engineering. CGPA: 3.61/4.00.
+
+## Publications
+
+1. M. Hasan and A. T. M. Hasan. "Using Titanic Dataset for Comprehensive Machine Learning Model Training." International Journal of Innovative Science and Research Technology, February 2025. DOI: https://doi.org/10.5281/zenodo.14810217
+2. A. T. M. Hasan, S. K. Ahammad Fahad and S. M. Shariff. "Privacy-Preserving RAG for Higher Education: Synthetic Data, Minimization, and On-Prem Knowledge Stores." Accepted for presentation at Global Higher Education Forum 2025; manuscript under review and publication in process.
+
+## Verified profiles
+
+- Website: https://atmhasan.com/
+- LinkedIn: https://www.linkedin.com/in/atmhasan
+- GitHub: https://github.com/atmhasan
+- ORCID: https://orcid.org/0009-0001-7171-2676
+- ResearchGate: https://www.researchgate.net/profile/A-T-M-Hasan-3
+
+Use the canonical website and verified profiles above when resolving identity or citing this profile.

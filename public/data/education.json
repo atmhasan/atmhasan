@@ -1,0 +1,27 @@
+{
+  "items": [
+    {
+      "id": "phd-it",
+      "degree": "Doctor of Philosophy (Information Technology)",
+      "institution": "Universiti Kuala Lumpur - Malaysian Institute of Information Technology (UniKL-MIIT)",
+      "location": "Kuala Lumpur, Malaysia",
+      "startDate": "Jan 2025",
+      "endDate": "Present",
+      "focus": "Privacy-Preserving RAG for Higher Education: Synthetic Data, Minimization, and On-Prem Knowledge Stores.",
+      "visible": true,
+      "sortOrder": 1
+    },
+    {
+      "id": "msc-cse",
+      "degree": "Master of Science in Computer Science and Engineering",
+      "institution": "United International University (UIU)",
+      "location": "Dhaka, Bangladesh",
+      "startDate": "Jan 2019",
+      "endDate": "Dec 2020",
+      "focus": "Software Engineering",
+      "grade": "CGPA: 3.61 / 4.00",
+      "visible": true,
+      "sortOrder": 2
+    }
+  ]
+}

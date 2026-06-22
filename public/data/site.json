@@ -1,0 +1,43 @@
+{
+  "url": "https://atmhasan.com/",
+  "siteName": "A T M Hasan Portfolio",
+  "title": "A T M Hasan | AI Researcher & Senior Software Engineer",
+  "description": "A T M Hasan is an AI Engineer, AI Researcher and Senior Software Engineer in Kuala Lumpur with 12+ years in Java, Spring Boot, microservices, RAG and document AI.",
+  "author": "A T M Hasan",
+  "language": "en",
+  "locale": "en_MY",
+  "image": "images/og-image.png",
+  "imageAlt": "A T M Hasan, AI Researcher and Senior Software Engineer",
+  "dateModified": "2026-06-22",
+  "roles": [
+    "AI Engineer",
+    "AI Researcher",
+    "Senior Software Engineer",
+    "Java Software Engineer"
+  ],
+  "keywords": [
+    "AI Engineer",
+    "AI Researcher",
+    "Senior Software Engineer",
+    "Java Software Engineer",
+    "Generative AI Engineer",
+    "RAG Engineer",
+    "Retrieval-Augmented Generation Engineer",
+    "LLM Engineer",
+    "Multimodal RAG Researcher",
+    "Privacy-Preserving AI Researcher",
+    "Document AI Engineer",
+    "Machine Learning Engineer",
+    "NLP Engineer",
+    "Java Backend Developer",
+    "Backend Engineer",
+    "Spring Boot Developer",
+    "Microservices Engineer",
+    "Enterprise Software Architect",
+    "Software Development Manager",
+    "Technical Lead",
+    "REST API Developer",
+    "SQL Optimization",
+    "Kuala Lumpur AI Engineer"
+  ]
+}

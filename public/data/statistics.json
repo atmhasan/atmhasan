@@ -1,0 +1,9 @@
+{
+  "items": [
+    { "id": "experience", "value": "12+", "label": "Years Experience", "icon": "calendar", "sortOrder": 1 },
+    { "id": "projects", "value": "50+", "label": "Projects", "icon": "box", "sortOrder": 2 },
+    { "id": "leadership", "value": "Team", "label": "Leadership", "icon": "users", "sortOrder": 3 },
+    { "id": "research-focus", "value": "AI/RAG", "label": "Research Focus", "icon": "book", "sortOrder": 4 },
+    { "id": "certifications", "value": "20+", "label": "Certifications", "icon": "badge", "sortOrder": 5 }
+  ]
+}

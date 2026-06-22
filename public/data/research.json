@@ -1,0 +1,19 @@
+{
+  "eyebrow": "Research Focus",
+  "title": "Privacy-Preserving RAG for Higher Education",
+  "subtitle": "Synthetic Data, Minimization, and On-Prem Knowledge Stores",
+  "summary": "Current PhD research focuses on privacy-preserving multimodal RAG for higher education, including OCR, document parsing, retrieval, re-ranking, grounding, guardrails, and evaluation.",
+  "keywords": [
+    "Multimodal RAG",
+    "OCR",
+    "Document Parsing",
+    "Retrieval",
+    "Re-ranking",
+    "Grounding",
+    "Guardrails",
+    "Synthetic Data",
+    "On-Prem Knowledge Stores",
+    "Privacy & Security"
+  ]
+}
+

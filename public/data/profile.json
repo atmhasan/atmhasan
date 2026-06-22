@@ -1,0 +1,17 @@
+{
+  "name": "A T M Hasan",
+  "headline": "AI Engineer | AI Researcher | Senior Software Engineer | Java Software Engineer",
+  "summary": "AI Researcher and Senior Software Engineer with 12+ years of experience in Java enterprise applications, Spring Boot, microservices, REST APIs, databases, and production engineering. Current work combines privacy-preserving RAG and document intelligence with reliable backend systems. Experienced in team leadership, API integration, SQL optimization, Agile delivery, and enterprise software support.",
+  "location": "Kuala Lumpur, Malaysia",
+  "shortLocation": "Kuala Lumpur",
+  "email": "info@atmhasan.com",
+  "phone": "+60 19-717 0089",
+  "profileImage": "images/atm_hasan.png",
+  "cvUrl": "documents/A_T_M_Hasan_CV.pdf",
+  "socialLinks": [
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/atmhasan" },
+    { "label": "GitHub", "url": "https://github.com/atmhasan" },
+    { "label": "ORCID", "url": "https://orcid.org/0009-0001-7171-2676" },
+    { "label": "ResearchGate", "url": "https://www.researchgate.net/profile/A-T-M-Hasan-3" }
+  ]
+}

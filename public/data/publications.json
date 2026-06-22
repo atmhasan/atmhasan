@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "id": "titanic-ml-2025",
+      "title": "Using Titanic Dataset for Comprehensive Machine Learning Model Training",
+      "authors": ["M. Hasan", "A. T. M. Hasan"],
+      "venue": "International Journal of Innovative Science and Research Technology (IJISRT)",
+      "status": "Published, Feb 2025",
+      "doi": "10.5281/zenodo.14810217",
+      "doiUrl": "https://doi.org/10.5281/zenodo.14810217",
+      "visible": true,
+      "sortOrder": 1
+    },
+    {
+      "id": "privacy-rag-he-2025",
+      "title": "Privacy-Preserving RAG for Higher Education: Synthetic Data, Minimization, and On-Prem Knowledge Stores",
+      "authors": ["A. T. M. Hasan", "S. K. Ahammad Fahad", "S. M. Shariff"],
+      "venue": "Global Higher Education Forum (GHEF) 2025",
+      "status": "Manuscript under review; accepted for presentation; full paper in publication process.",
+      "visible": true,
+      "sortOrder": 2
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+# A T M Hasan
+
+> AI researcher and senior software engineer in Kuala Lumpur, Malaysia, specializing in privacy-preserving RAG, document intelligence, Java, Spring Boot and microservices.
+
+## Canonical profile
+
+- [Portfolio](https://atmhasan.com/): Professional experience, research, projects, skills, education, publications, certifications and references.
+- [Full machine-readable profile](https://atmhasan.com/llms-full.txt): Extended factual profile for AI systems.
+- [Sitemap](https://atmhasan.com/sitemap.xml): Canonical public URLs.
+
+## Primary roles
+
+- AI Engineer
+- AI Researcher
+- Senior Software Engineer
+- Java Software Engineer
+
+## Research focus
+
+- Privacy-preserving and multimodal retrieval-augmented generation for higher education
+- Synthetic data, data minimization and on-premises knowledge stores
+- OCR, document parsing, retrieval, re-ranking, grounding, guardrails and evaluation
+
+## Verified identity links
+
+- [LinkedIn](https://www.linkedin.com/in/atmhasan)
+- [GitHub](https://github.com/atmhasan)
+- [ORCID](https://orcid.org/0009-0001-7171-2676)
+- [ResearchGate](https://www.researchgate.net/profile/A-T-M-Hasan-3)
+
+## Contact
+
+- Email: info@atmhasan.com
+- Location: Kuala Lumpur, Malaysia

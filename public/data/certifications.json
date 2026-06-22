@@ -1,0 +1,220 @@
+{
+  "items": [
+    {
+      "id": "ghef-2025",
+      "name": "GHEF 2025 Presentation",
+      "issuer": "GHEF",
+      "date": "2025",
+      "image": "images/cert/gallery/GHEF-2025.png",
+      "visible": true,
+      "sortOrder": -2
+    },
+    {
+      "id": "klsf-2025",
+      "name": "KLSF 2025 Presentation",
+      "issuer": "KLSF",
+      "date": "2025",
+      "image": "images/cert/gallery/KLSF-2025.png",
+      "visible": true,
+      "sortOrder": -1
+    },
+    {
+      "id": "ieee-authorship-open-access-2026",
+      "name": "IEEE Authorship and Open Access Symposium: Tips and Best Practices to Get Published from IEEE Editors",
+      "issuer": "IEEE",
+      "date": "Jun 2026",
+      "image": "images/cert/gallery/certificate-89785861.jpg",
+      "visible": true,
+      "sortOrder": 1
+    },
+    {
+      "id": "ibm-machine-learning-python-2025",
+      "name": "Machine Learning with Python",
+      "issuer": "IBM Cognitive Class",
+      "date": "Dec 2025",
+      "image": "images/cert/gallery/ibm-machine-learning-python-2025.jpg",
+      "visible": true,
+      "sortOrder": 2
+    },
+    {
+      "id": "ibm-data-visualization-python-2025",
+      "name": "Data Visualization with Python",
+      "issuer": "IBM Cognitive Class",
+      "date": "Dec 2025",
+      "image": "images/cert/gallery/ibm-data-visualization-python-2025.jpg",
+      "visible": true,
+      "sortOrder": 3
+    },
+    {
+      "id": "ibm-data-science-101-2025",
+      "name": "Data Science 101",
+      "issuer": "IBM Cognitive Class",
+      "date": "Dec 2025",
+      "image": "images/cert/gallery/ibm-data-science-101-2025.jpg",
+      "visible": true,
+      "sortOrder": 4
+    },
+    {
+      "id": "ibm-data-science-tools-2025",
+      "name": "Data Science Tools",
+      "issuer": "IBM Cognitive Class",
+      "date": "Dec 2025",
+      "image": "images/cert/gallery/ibm-data-science-tools-2025.jpg",
+      "visible": true,
+      "sortOrder": 5
+    },
+    {
+      "id": "ibm-python-data-science-2025",
+      "name": "Python 101 for Data Science",
+      "issuer": "IBM Cognitive Class",
+      "date": "Dec 2025",
+      "image": "images/cert/gallery/ibm-python-data-science-2025.jpg",
+      "visible": true,
+      "sortOrder": 6
+    },
+    {
+      "id": "ibm-data-analysis-python-2025",
+      "name": "Data Analysis with Python",
+      "issuer": "IBM Cognitive Class",
+      "date": "Nov 2025",
+      "image": "images/cert/gallery/ibm-data-analysis-python-2025.jpg",
+      "visible": true,
+      "sortOrder": 7
+    },
+    {
+      "id": "ibm-data-science-methodology-2025",
+      "name": "Data Science Methodology",
+      "issuer": "IBM Cognitive Class",
+      "date": "Nov 2025",
+      "image": "images/cert/gallery/ibm-data-science-methodology-2025.jpg",
+      "visible": true,
+      "sortOrder": 8
+    },
+    {
+      "id": "ibm-sql-relational-databases-2025",
+      "name": "SQL and Relational Databases 101",
+      "issuer": "IBM Cognitive Class",
+      "date": "Nov 2025",
+      "image": "images/cert/gallery/ibm-sql-relational-databases-2025.jpg",
+      "visible": true,
+      "sortOrder": 9
+    },
+    {
+      "id": "ieee-young-professionals-2025",
+      "name": "3rd IEEE Young Professionals Future Leader Summit 2025",
+      "issuer": "IEEE Young Professionals",
+      "date": "Nov 2025",
+      "image": "images/cert/gallery/ieee-young-professionals-2025.jpg",
+      "visible": true,
+      "sortOrder": 10
+    },
+    {
+      "id": "teacher-of-academy-2025",
+      "name": "Teacher of Academy 2.0",
+      "issuer": "IT Step Academy",
+      "date": "Aug 2025",
+      "image": "images/cert/gallery/step-it-academy.jpg",
+      "visible": true,
+      "sortOrder": 11
+    },
+    {
+      "id": "ieee-authorship-open-access-sep-2025",
+      "name": "IEEE Authorship and Open Access Symposium: Tips and Best Practices to Get Published from IEEE Editors",
+      "issuer": "IEEE",
+      "date": "Sep 2025",
+      "image": "images/cert/gallery/ieee-authorship-open-access-2025.jpg",
+      "visible": true,
+      "sortOrder": 12
+    },
+    {
+      "id": "ieee-authorship-open-access-jul-2025",
+      "name": "IEEE Authorship and Open Access Symposium: Tips and Best Practices to Get Published from IEEE Editors",
+      "issuer": "IEEE",
+      "date": "Jul 2025",
+      "image": "images/cert/gallery/ieee-publishing-2025.jpg",
+      "visible": true,
+      "sortOrder": 13
+    },
+    {
+      "id": "iop-how-to-get-published-2025",
+      "name": "How to Get Published",
+      "issuer": "IOP Publishing",
+      "date": "Jun 2025",
+      "image": "images/cert/gallery/iop-publishing.jpg",
+      "visible": true,
+      "sortOrder": 14
+    },
+    {
+      "id": "unikl-research-symposium-2025",
+      "name": "2025 PG Internal Research Symposium",
+      "issuer": "Universiti Kuala Lumpur",
+      "date": "May 2025",
+      "image": "images/cert/gallery/research-symposium-2025.jpg",
+      "visible": true,
+      "sortOrder": 15
+    },
+    {
+      "id": "spring-boot-microservices-2024",
+      "name": "Building Scalable Java Microservices with Spring Boot and Spring Cloud",
+      "issuer": "Google Cloud",
+      "date": "Oct 2024",
+      "image": "images/cert/gallery/spring-boot-microservices-2024.jpg",
+      "visible": true,
+      "sortOrder": 16
+    },
+    {
+      "id": "nosql-databases-essentials-2024",
+      "name": "NoSQL Databases Essentials",
+      "issuer": "IBM via Coursera",
+      "date": "Oct 2024",
+      "image": "images/cert/gallery/nosql-databases-essentials-2024.jpg",
+      "visible": true,
+      "sortOrder": 17
+    },
+    {
+      "id": "stanford-python-2024",
+      "name": "Stanford Code in Place",
+      "issuer": "Stanford University",
+      "date": "Jun 2024",
+      "image": "images/cert/gallery/stanford-code-in-place-2024.jpg",
+      "visible": true,
+      "sortOrder": 18
+    },
+    {
+      "id": "database-management-essentials-2020",
+      "name": "Database Management Essentials",
+      "issuer": "University of Colorado System via Coursera",
+      "date": "Nov 2020",
+      "image": "images/cert/gallery/database-management-essentials-2020.jpg",
+      "visible": true,
+      "sortOrder": 19
+    },
+    {
+      "id": "rhcsa-2019",
+      "name": "Red Hat Certified System Administrator (RHCSA)",
+      "issuer": "Red Hat",
+      "date": "Apr 2019",
+      "image": "images/cert/gallery/RHCSA.png",
+      "visible": true,
+      "sortOrder": 20
+    },
+    {
+      "id": "idb-bisew-enterprise-systems-2016",
+      "name": "Enterprise Systems Analysis and Design - J2EE",
+      "issuer": "IDB-BISEW IT Scholarship Project",
+      "date": "Oct 2016",
+      "image": "images/cert/gallery/idb-bisew-enterprise-systems-2016.jpg",
+      "visible": true,
+      "sortOrder": 21
+    },
+    {
+      "id": "ocjp-2015",
+      "name": "Oracle Certified Professional, Java SE 6 Programmer",
+      "issuer": "Oracle",
+      "date": "Mar 2015",
+      "image": "images/cert/gallery/oracle-java-professional-2015.jpg",
+      "visible": true,
+      "sortOrder": 22
+    }
+  ]
+}

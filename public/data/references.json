@@ -1,0 +1,32 @@
+{
+  "note": "Contact details available on request.",
+  "items": [
+    {
+      "id": "shafiza-mohd-shariff",
+      "name": "Dr. Shafiza Mohd Shariff",
+      "title": "Deputy Dean (Academic & Technology)",
+      "affiliation": "Universiti Kuala Lumpur (UniKL-MIIT), Kuala Lumpur, Malaysia",
+      "relationship": "Academic Supervisor",
+      "visible": true,
+      "sortOrder": 1
+    },
+    {
+      "id": "syed-ali",
+      "name": "Dr. Syed Ali",
+      "title": "Chief Information Security Officer (CISO)",
+      "affiliation": "Stealth ICT, LLC, Wyoming, United States",
+      "relationship": "Professional",
+      "visible": true,
+      "sortOrder": 2
+    },
+    {
+      "id": "christopher-powell",
+      "name": "Christopher Powell",
+      "title": "Founder",
+      "affiliation": "Consumer Safety Watch, San Diego, California, United States",
+      "relationship": "Professional",
+      "visible": true,
+      "sortOrder": 3
+    }
+  ]
+}
