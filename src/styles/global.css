@@ -502,13 +502,22 @@ html[data-theme="dark"] .site-footer { color: var(--muted); }
   .timeline-title-row { display: block; }
   .timeline-title-row time { display: inline-block; margin-top: 6px; }
   .projects-grid { grid-template-columns: repeat(2, 1fr); }
-  .skills-grid { grid-template-columns: repeat(2, 1fr); }
-  .contact-banner { grid-template-columns: 1fr; gap: 18px; padding: 25px; }
-  .contact-map { width: 100%; min-height: 62px; justify-items: start; }
+  .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding-inline: 0; }
+  .skill-card { min-height: auto; padding: 13px 12px; }
+  .skill-heading { align-items: flex-start; gap: 8px; }
+  .skill-heading svg { flex: 0 0 auto; width: 20px; height: 20px; }
+  .skill-heading h3 { font-size: 13px; line-height: 1.25; }
+  .skill-card ul { margin-top: 10px; padding-left: 18px; font-size: 11px; line-height: 1.45; overflow-wrap: anywhere; }
+  .contact-banner { grid-template-columns: 1fr; justify-items: center; gap: 18px; padding: 25px; text-align: center; }
+  .contact-map { width: 100%; min-height: 62px; justify-items: center; }
   .whatsapp-float { right: 14px; bottom: 16px; width: 40px; height: 40px; }
   .references-grid { grid-template-columns: 1fr; }
   .references-header { display: block; margin-bottom: 10px; }
   .contact-row span, .contact-row a, .social-row a { font-size: 11px; gap: 4px; }
+  .contact-message { flex-direction: column; justify-content: center; align-items: center; gap: 12px; }
+  .contact-message p { margin-inline: auto; }
+  .contact-details { width: 100%; justify-items: center; text-align: center; }
+  .contact-details a, .contact-details span { justify-content: center; }
   .contact-details, .contact-conversation-button { margin: 0 auto; }
   .certificate-card-content { min-height: 58px; padding: 8px 9px 7px; }
   .certificate-carousel .certificate-card-content { min-height: 50px; padding: 7px 8px 6px; }
@@ -516,6 +525,8 @@ html[data-theme="dark"] .site-footer { color: var(--muted); }
   .certificate-card p { margin-top: 4px; font-size: 10px; line-height: 1.28; }
   .certificate-thumbnail { padding: 6px; }
   .carousel-dots{gap: 2px;}
+  .research-panel h2{font-size: 15px;}
+  .research-subtitle{font-size: 12px;}
 }
 @media (max-width: 430px) {
   .shell { width: min(calc(100% - 20px), var(--shell)); }
@@ -536,14 +547,18 @@ html[data-theme="dark"] .site-footer { color: var(--muted); }
   .research-copy { display: block; }
   .research-icon { margin-bottom: 14px; }
   .projects-grid, .education-list, .publication-list { grid-template-columns: 1fr; }
+  .skills-grid { grid-template-columns: 1fr; gap: 9px; padding: 0; }
+  .skill-card { padding: 12px; }
+  .skill-card ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 12px; padding-left: 0; }
+  .skill-card li { min-width: 0; }
   .certificate-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
   .certification-header { align-items: stretch; flex-direction: column; gap: 12px; }
   .certification-view-all { width: 100%; flex: 0 0 auto; justify-content: center; }
   .item-title-row { display: block; }
   .item-title-row time { display: inline-block; margin-top: 5px; }
   .references-grid { grid-template-columns: 1fr; }
-  .contact-message { align-items: flex-start; gap: 15px; }
-  .contact-message svg { width: 35px; }
+  .contact-message { align-items: center; gap: 10px; }
+  .contact-message svg { width: 36px; height: 36px; }
   .research-icon{display: none;}
 }
 @media (prefers-reduced-motion: reduce) {
