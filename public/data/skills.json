@@ -1,7 +1,7 @@
 {
   "groups": [
-    { "id": "languages", "label": "Languages", "icon": "globe", "items": ["Java", "Python", "SQL", "JavaScript", "PHP"], "sortOrder": 2 },
-    { "id": "frameworks", "label": "Frameworks", "icon": "layers", "items": ["Spring Boot", "Microservices", "REST APIs", "Java Swing"], "sortOrder": 3 },
+    { "id": "languages", "label": "Languages", "icon": "globe", "items": ["Java", "Python", "PHP", "ASP.NET/C#", "SQL"], "sortOrder": 2 },
+    { "id": "frameworks", "label": "Frameworks", "icon": "layers", "items": ["Spring Boot", "Microservices", "REST APIs", "Java Swing", "LangChain"], "sortOrder": 3 },
     { "id": "databases", "label": "Databases", "icon": "database", "items": ["MySQL", "Oracle 11g", "PostgreSQL", "MS SQL Server", "MongoDB"], "sortOrder": 4 },
     { "id": "ai-data", "label": "AI & Data", "icon": "brain", "items": ["RAG", "OCR", "FAISS/Chroma", "scikit-learn", "pandas, NumPy, Matplotlib"], "sortOrder": 1 },
     { "id": "tools", "label": "Tools & Practices", "icon": "wrench", "items": ["Git", "Agile", "API Integration", "SQL Optimization", "Production Troubleshooting"], "sortOrder": 5 }

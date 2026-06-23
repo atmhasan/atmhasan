@@ -283,8 +283,8 @@ body.contact-modal-open { overflow: hidden; }
 .contact-submit-button:disabled { opacity: 0.62; cursor: wait; }
 .contact-form-note { margin: 12px 0 0; color: var(--muted); font-size: 12px; text-align: center; }
 .contact-form-note a { color: var(--blue-600); font-weight: 800; text-decoration: underline; }
-.site-footer { padding: 15px 0 4px; color: var(--muted); font-size: 12px; }
-.footer-inner { display: flex; align-items: center; justify-content: center; gap: 10px; }
+.site-footer { padding: 15px 0 4px; color: var(--muted); font-size: 12px; text-align: center; }
+.footer-inner { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px; }
 .footer-logo { width: 34px; height: 34px; display: block; flex: 0 0 auto; overflow: hidden; border-radius: 6px; }
 .site-footer p { margin: 0; }
 .whatsapp-float { position: fixed; z-index: 30; right: 22px; bottom: 24px; width: 54px; height: 54px; display: grid; place-items: center; border: 2px solid rgba(255, 255, 255, 0.9); border-radius: 50%; background: #25d366; color: #fff; box-shadow: 0 10px 28px rgba(8, 65, 32, 0.28); transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease; max-width: calc(100vw - 16px); }
@@ -501,6 +501,7 @@ html[data-theme="dark"] .site-footer { color: var(--muted); }
   .timeline-dot { left: -23px; }
   .timeline-title-row { display: block; }
   .timeline-title-row time { display: inline-block; margin-top: 6px; }
+  .timeline-responsibilities { display: none; }
   .projects-grid { grid-template-columns: repeat(2, 1fr); }
   .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding-inline: 0; }
   .skill-card { min-height: auto; padding: 13px 12px; }
