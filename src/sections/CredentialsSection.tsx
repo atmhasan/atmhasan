@@ -19,6 +19,7 @@ export const CredentialsSection = ({ certifications }: CredentialsSectionProps) 
   const [activePage, setActivePage] = useState(0);
   const [pages, setPages] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [isMobileLayout, setIsMobileLayout] = useState(false);
   const certificationItems = certifications.items
     .filter((item) => item.visible)
     .sort((a, b) => a.sortOrder - b.sortOrder);
@@ -27,13 +28,21 @@ export const CredentialsSection = ({ certifications }: CredentialsSectionProps) 
   useEffect(() => () => document.body.classList.remove("certificate-viewer-open"), []);
 
   useEffect(() => {
-    // initial measurements
+    const mediaQuery = window.matchMedia("(max-width: 680px)");
+    const updateMobileLayout = () => setIsMobileLayout(mediaQuery.matches);
+    updateMobileLayout();
+    mediaQuery.addEventListener("change", updateMobileLayout);
+
+    return () => mediaQuery.removeEventListener("change", updateMobileLayout);
+  }, []);
+
+  useEffect(() => {
     updateScrollButtons();
     const onResize = () => updateScrollButtons();
     window.addEventListener("resize", onResize);
 
     let interval: number | undefined;
-    if (!showAll) {
+    if (!showAll && !isMobileLayout) {
       interval = window.setInterval(() => {
         if (!isPaused && galleryRef.current) {
           scrollGallery(1);
@@ -46,7 +55,7 @@ export const CredentialsSection = ({ certifications }: CredentialsSectionProps) 
       if (interval) window.clearInterval(interval);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [showAll, isPaused, certificationItems.length]);
+  }, [showAll, isPaused, isMobileLayout, certificationItems.length]);
 
   const openCertificate = (item: CertificationItem) => {
     if (!item.image) return;
@@ -58,24 +67,25 @@ export const CredentialsSection = ({ certifications }: CredentialsSectionProps) 
   function updateScrollButtons() {
     const el = galleryRef.current;
     if (!el) return;
-    setCanScrollPrev(el.scrollLeft > 4);
-    setCanScrollNext(el.scrollLeft + el.clientWidth < el.scrollWidth - 4);
 
-    // compute pages and active page
-    const cardEl = el.querySelector<HTMLDivElement>(".certificate-card");
-    const gap = 14;
-    const itemWidth = cardEl ? cardEl.offsetWidth + gap : 274;
-    const itemsPerView = Math.max(1, Math.floor(el.clientWidth / itemWidth));
-    const newPages = Math.max(1, Math.ceil(certificationItems.length / itemsPerView));
+    const maxScroll = Math.max(0, el.scrollWidth - el.clientWidth);
+    setCanScrollPrev(el.scrollLeft > 4);
+    setCanScrollNext(el.scrollLeft < maxScroll - 4);
+
+    const newPages = maxScroll > 0 ? Math.ceil(maxScroll / el.clientWidth) + 1 : 1;
     setPages(newPages);
-    const newActive = Math.min(newPages - 1, Math.round(el.scrollLeft / el.clientWidth));
+
+    const pageStep = newPages > 1 ? maxScroll / (newPages - 1) : el.clientWidth;
+    const newActive = Math.min(newPages - 1, Math.round(el.scrollLeft / pageStep));
     setActivePage(newActive);
   }
 
   const scrollToPage = (page: number) => {
     const el = galleryRef.current;
     if (!el) return;
-    el.scrollTo({ left: page * el.clientWidth, behavior: "smooth" });
+    const maxScroll = Math.max(0, el.scrollWidth - el.clientWidth);
+    const pageStep = pages > 1 ? maxScroll / (pages - 1) : el.clientWidth;
+    el.scrollTo({ left: Math.min(page * pageStep, maxScroll), behavior: "smooth" });
     setTimeout(updateScrollButtons, 300);
   };
 
@@ -149,7 +159,6 @@ export const CredentialsSection = ({ certifications }: CredentialsSectionProps) 
               <div className="certificate-card-content">
                 <h3>{item.name}</h3>
                 <p>{item.issuer}</p>
-                <time>{item.date}</time>
               </div>
               </article>
             ))}
@@ -196,7 +205,6 @@ export const CredentialsSection = ({ certifications }: CredentialsSectionProps) 
                   <div className="certificate-card-content">
                     <h3>{item.name}</h3>
                     <p>{item.issuer}</p>
-                    <time>{item.date}</time>
                   </div>
                 </article>
               ))}

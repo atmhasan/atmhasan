@@ -19,15 +19,6 @@
       "sortOrder": -1
     },
     {
-      "id": "ieee-authorship-open-access-2026",
-      "name": "IEEE Authorship and Open Access Symposium: Tips and Best Practices to Get Published from IEEE Editors",
-      "issuer": "IEEE",
-      "date": "Jun 2026",
-      "image": "images/cert/gallery/certificate-89785861.jpg",
-      "visible": true,
-      "sortOrder": 1
-    },
-    {
       "id": "ibm-machine-learning-python-2025",
       "name": "Machine Learning with Python",
       "issuer": "IBM Cognitive Class",
@@ -116,15 +107,6 @@
       "image": "images/cert/gallery/step-it-academy.jpg",
       "visible": true,
       "sortOrder": 11
-    },
-    {
-      "id": "ieee-authorship-open-access-sep-2025",
-      "name": "IEEE Authorship and Open Access Symposium: Tips and Best Practices to Get Published from IEEE Editors",
-      "issuer": "IEEE",
-      "date": "Sep 2025",
-      "image": "images/cert/gallery/ieee-authorship-open-access-2025.jpg",
-      "visible": true,
-      "sortOrder": 12
     },
     {
       "id": "ieee-authorship-open-access-jul-2025",
