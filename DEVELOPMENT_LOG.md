@@ -409,3 +409,9 @@
 - Renamed the downloadable CV asset to `A_T_M_Hasan_CV.pdf` and updated the profile JSON reference.
 - Tightened mobile overflow handling to prevent horizontal scrolling on small screens.
 - Reinforced the sticky header behavior with root overflow clipping and a higher header stacking context.
+
+## 2026-06-23 - Post-deployment contact and SEO cleanup
+
+- Switched contact-form delivery to atmhasan.oop@gmail.com while preserving info@atmhasan.com as the public contact address.
+- Refreshed SEO modified dates in static metadata, JSON site data, sitemap, and LLM-readable profile.
+- Kept the FormSubmit one-time activation note aligned with the form recipient email.

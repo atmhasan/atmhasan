@@ -177,6 +177,7 @@ export interface ContactData {
   whatsappMessage: string;
   formTitle: string;
   formMessage: string;
+  formRecipientEmail: string;
   formSubject: string;
 }
 

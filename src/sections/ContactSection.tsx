@@ -55,7 +55,7 @@ export const ContactSection = ({ contact, profile }: ContactSectionProps) => {
     setSubmissionStatus("sending");
 
     try {
-      const response = await fetch(`https://formsubmit.co/ajax/${profile.email}`, {
+      const response = await fetch(`https://formsubmit.co/ajax/${contact.formRecipientEmail}`, {
         method: "POST",
         headers: {
           Accept: "application/json",
