@@ -1,5 +1,6 @@
 import { FaEnvelope, FaGithub, FaLinkedin, FaMapMarkerAlt, FaOrcid, FaPhoneAlt, FaResearchgate, FaUserCircle } from "react-icons/fa";
 import type { ProfileData } from "../types/portfolio";
+import { trackEvent } from "../utils/analytics";
 import { withBase } from "../utils/paths";
 
 const socialIcons = {
@@ -17,13 +18,13 @@ export const HeroSection = ({ profile }: { profile: ProfileData }) => (
         <p className="hero-headline">{profile.headline}</p>
         <div className="contact-row" aria-label="Contact information">
           <span><FaMapMarkerAlt size={16} aria-hidden="true" />{profile.shortLocation}</span>
-          <a href={`tel:${profile.phone.replace(/[^+\d]/g, "")}`}><FaPhoneAlt size={16} aria-hidden="true" />{profile.phone}</a>
-          <a href={`mailto:${profile.email}`}><FaEnvelope size={16} aria-hidden="true" />{profile.email}</a>
+          <a href={`tel:${profile.phone.replace(/[^+\d]/g, "")}`} onClick={() => trackEvent("phone_click", { placement: "hero" })}><FaPhoneAlt size={16} aria-hidden="true" />{profile.phone}</a>
+          <a href={`mailto:${profile.email}`} onClick={() => trackEvent("email_click", { placement: "hero" })}><FaEnvelope size={16} aria-hidden="true" />{profile.email}</a>
         </div>
         <div className="social-row">
           {profile.socialLinks.map((link) => {
             const Icon = socialIcons[link.label as keyof typeof socialIcons] ?? FaUserCircle;
-            return <a className={`social-link social-link-${link.label.toLowerCase()}`} key={link.label} href={link.url} target="_blank" rel="me noreferrer"><Icon size={17} />{link.label}</a>;
+            return <a className={`social-link social-link-${link.label.toLowerCase()}`} key={link.label} href={link.url} target="_blank" rel="me noreferrer" onClick={() => trackEvent("social_click", { social_platform: link.label, link_url: link.url })}><Icon size={17} />{link.label}</a>;
           })}
         </div>
         <p className="hero-summary">{profile.summary}</p>

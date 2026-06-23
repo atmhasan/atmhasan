@@ -17,8 +17,18 @@ import type {
 } from "../types/portfolio";
 import { withBase } from "../utils/paths";
 
+declare const __CONTENT_VERSION__: string;
+
+const contentVersion = typeof __CONTENT_VERSION__ === "string" ? __CONTENT_VERSION__ : "dev";
+
+const withContentVersion = (path: string) => {
+  const url = withBase(path);
+  const separator = url.includes("?") ? "&" : "?";
+  return `${url}${separator}v=${encodeURIComponent(contentVersion)}`;
+};
+
 const loadJson = async <T,>(path: string): Promise<T> => {
-  const response = await fetch(withBase(path));
+  const response = await fetch(withContentVersion(path), { cache: "no-cache" });
   if (!response.ok) {
     throw new Error(`Unable to load ${path}`);
   }

@@ -398,6 +398,13 @@ in public/images/cert for archival purposes.
 - Lint, TypeScript, and production builds pass.
 - GitHub Pages deployment succeeds.
 - The site is ready to connect to `atmhasan.com`.
+
+## Post-Launch SEO and Analytics Notes
+
+- Regional search phrases now include Malaysia-focused variants such as Malaysia AI Engineer, Malaysia AI Researcher, Malaysia Senior Software Engineer, and Malaysia Java Software Engineer.
+- Runtime JSON content is fetched with a build-version query string to reduce stale content after GitHub Pages deployments.
+- Google Analytics events are tracked for CV downloads, email and phone clicks, WhatsApp clicks, social profile clicks, and contact-form submissions.
+- Google Search Console sitemap submission remains a manual account step: verify the domain property, submit `https://atmhasan.com/sitemap.xml`, then use URL Inspection to request indexing for `https://atmhasan.com/`.
 ## Search Launch Checklist
 
 After the production site is available at `https://atmhasan.com/`:

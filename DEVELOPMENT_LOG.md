@@ -415,3 +415,10 @@
 - Switched contact-form delivery to atmhasan.oop@gmail.com while preserving info@atmhasan.com as the public contact address.
 - Refreshed SEO modified dates in static metadata, JSON site data, sitemap, and LLM-readable profile.
 - Kept the FormSubmit one-time activation note aligned with the form recipient email.
+
+## 2026-06-23 - Cache busting, analytics events, and search launch
+
+- Added build-version cache busting to JSON content fetches so GitHub Pages deployments do not serve stale portfolio data.
+- Added Google Analytics interaction events for CV downloads, contact links, WhatsApp clicks, social links, and contact-form submissions.
+- Added visible Kuala Lumpur, Malaysia wording to the hero summary for regional SEO support.
+- Documented Google Search Console sitemap submission and URL inspection as a manual post-deployment step.

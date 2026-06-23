@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type FormEvent, type MouseEvent } from "react";
 import { FaEnvelope, FaMapMarkerAlt, FaPaperPlane, FaPhoneAlt, FaTimes, FaWhatsapp } from "react-icons/fa";
 import type { ContactData, ProfileData } from "../types/portfolio";
+import { trackEvent } from "../utils/analytics";
 import { withBase } from "../utils/paths";
 
 interface ContactSectionProps {
@@ -20,6 +21,7 @@ export const ContactSection = ({ contact, profile }: ContactSectionProps) => {
 
   const openContactForm = () => {
     setSubmissionStatus("idle");
+    trackEvent("contact_form_open", { placement: "contact_banner" });
     document.body.classList.add("contact-modal-open");
     dialogRef.current?.showModal();
   };
@@ -48,11 +50,13 @@ export const ContactSection = ({ contact, profile }: ContactSectionProps) => {
     const formData = new FormData(form);
     if (String(formData.get("_honey") ?? "").trim()) {
       form.reset();
+      trackEvent("contact_form_success", { method: "formsubmit" });
       setSubmissionStatus("success");
       return;
     }
 
     setSubmissionStatus("sending");
+    trackEvent("contact_form_submit", { method: "formsubmit" });
 
     try {
       const response = await fetch(`https://formsubmit.co/ajax/${contact.formRecipientEmail}`, {
@@ -77,8 +81,10 @@ export const ContactSection = ({ contact, profile }: ContactSectionProps) => {
       if (!response.ok || rejected) throw new Error("Contact form submission failed");
 
       form.reset();
+      trackEvent("contact_form_success", { method: "formsubmit" });
       setSubmissionStatus("success");
     } catch {
+      trackEvent("contact_form_error", { method: "formsubmit" });
       setSubmissionStatus("error");
     }
   };
@@ -91,8 +97,8 @@ export const ContactSection = ({ contact, profile }: ContactSectionProps) => {
         <div><h2>{contact.title}</h2><p>{contact.message}</p></div>
       </div>
       <address className="contact-details">
-        <a href={`mailto:${profile.email}`}><FaEnvelope size={16} aria-hidden="true" />{profile.email}</a>
-        <a href={`tel:${profile.phone.replace(/[^+\d]/g, "")}`}><FaPhoneAlt size={16} aria-hidden="true" />{profile.phone}</a>
+        <a href={`mailto:${profile.email}`} onClick={() => trackEvent("email_click", { placement: "contact_banner" })}><FaEnvelope size={16} aria-hidden="true" />{profile.email}</a>
+        <a href={`tel:${profile.phone.replace(/[^+\d]/g, "")}`} onClick={() => trackEvent("phone_click", { placement: "contact_banner" })}><FaPhoneAlt size={16} aria-hidden="true" />{profile.phone}</a>
         <span><FaMapMarkerAlt size={16} aria-hidden="true" />{profile.location}</span>
       </address>
       <div className="contact-map">
@@ -151,7 +157,7 @@ export const ContactSection = ({ contact, profile }: ContactSectionProps) => {
             {submissionStatus === "success" && <p className="is-success">Thank you. Your message has been sent successfully.</p>}
             {submissionStatus === "error" && (
               <p className="is-error">
-                The message could not be sent from this browser. <a href={`mailto:${profile.email}`}>Email me directly</a>.
+                The message could not be sent from this browser. <a href={`mailto:${profile.email}`} onClick={() => trackEvent("email_click", { placement: "contact_banner" })}>Email me directly</a>.
               </p>
             )}
           </div>
@@ -160,7 +166,7 @@ export const ContactSection = ({ contact, profile }: ContactSectionProps) => {
               <FaPaperPlane size={15} aria-hidden="true" />
               <span>{submissionStatus === "sending" ? "Sending..." : "Send Message"}</span>
             </button>
-            <a className="contact-modal-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer">
+            <a className="contact-modal-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer" onClick={() => trackEvent("whatsapp_click", { placement: "contact_modal" })}>
               <FaWhatsapp size={18} aria-hidden="true" />
               <span>Chat on WhatsApp</span>
             </a>

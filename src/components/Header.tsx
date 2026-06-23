@@ -1,6 +1,7 @@
 import { Download, Menu, Moon, Sun, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import type { NavigationItem } from "../types/portfolio";
+import { trackEvent } from "../utils/analytics";
 import { withBase } from "../utils/paths";
 
 interface HeaderProps {
@@ -15,6 +16,7 @@ export const Header = ({ items, cvUrl }: HeaderProps) => {
   const [theme, setTheme] = useState<"light" | "dark">(() =>
     document.documentElement.dataset.theme === "dark" ? "dark" : "light"
   );
+  const cvDownloadUrl = withBase(cvUrl);
   const visibleItems = useMemo(
     () => items.filter((item) => item.visible).sort((a, b) => a.sortOrder - b.sortOrder),
     [items]
@@ -104,7 +106,7 @@ export const Header = ({ items, cvUrl }: HeaderProps) => {
           ))}
         </nav>
 
-        <a className="cv-button" href={withBase(cvUrl)} download>
+        <a className="cv-button" href={cvDownloadUrl} download onClick={() => trackEvent("cv_download_click", { link_url: cvDownloadUrl })}>
           Download CV <Download size={16} aria-hidden="true" />
         </a>
         <button

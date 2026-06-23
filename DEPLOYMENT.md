@@ -58,6 +58,12 @@ npm run preview -- --host 127.0.0.1
 - Confirm the CV download link points to the renamed PDF in `public/documents`.
 - Check the certificate gallery, mobile header, and sticky navigation on real devices.
 - Confirm the custom domain and **Enforce HTTPS** are enabled in **Settings > Pages**.
+- Submit `https://atmhasan.com/sitemap.xml` in Google Search Console after verifying the domain property.
+- Use URL Inspection in Search Console to request indexing for `https://atmhasan.com/`.
+
+## Cache Behavior
+
+GitHub Pages controls response cache headers and commonly serves HTML and static files with short edge caching. Vite already hashes JavaScript and CSS asset filenames. JSON content fetches include a build-version query string so each deployment requests fresh content such as `/data/site.json?v=<build-version>` and avoids stale portfolio data after release.
 
 ## If the Site Does Not Load Correctly
 
